@@ -1,0 +1,113 @@
+.circle{
+  width: 270px;
+  height: 270px;
+  border-radius: 180px;
+  -webkit-border-radius: 180px;
+}
+
+h1{ 
+  font-size: 72px; 
+  font-weight: 700; 
+  margin: 5px;
+}
+
+h3{ 
+  font-size: 18px; 
+  font-weight: 500; 
+  margin: 0px;
+}
+
+h4{ 
+  font-size: 25px; 
+  font-weight: 500; 
+  color:rgb(222, 222, 222); 
+  margin: 0px;
+}
+
+body{
+  font-family: Helvetica, serif, Times; 
+  color: rgb(35, 35, 35); 
+  margin: 0;
+}
+
+.text-vertical-center{
+  display: table-cell; 
+  text-align: center; 
+  position: relative; 
+  top: -10px; 
+  vertical-align: middle;
+}
+
+.text-center{
+  display: table-cell; 
+  text-align: center; 
+  position: relative; 
+  vertical-align: middle;}
+
+.main-box{display:table; 
+  position: relative;
+  width: 100%; 
+  height: 100%; 
+  background: url(../temp/Fondo.jpeg) no-repeat center scroll; 
+  background-size: cover;}
+
+.frase-box{
+  display:table; 
+  position: relative; 
+  width: 100%; 
+  height: 30%; 
+  background: rgb(60, 89, 101) no-repeat center scroll; 
+  background-size: cover;}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --facebook: rgb(60, 89, 101);
+  --twitter: rgb(60, 89, 101);
+  --github: rgb(60, 89, 101);
+  --instagram: rgb(60, 89, 101);
+} 
+
+.redes-box{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: rgb(35, 35, 35);
+}
+
+.redes-box ul li{
+  display: inline-block;
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+
+.redes-box ul li a{
+  display: block;
+  padding: 10px;
+  background:rgb(60, 89, 101);
+  color: rgb(222, 222, 222);
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px rgba(0,0,0, .2);
+  transition: .2s;
+}
+
+.redes-box ul:hover a{
+  filter: blur(2px);
+}
+
+.redes-box ul li a:hover{
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 3px 5px 0px rgba(0,0,0, .4);
+  filter: none;
+}
+
